@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory Workflow"
+  short_description: "Cross-chat handoff memory for projects"
+  default_prompt: "Use $project-memory-workflow to read or update this project's cross-chat handoff memory."

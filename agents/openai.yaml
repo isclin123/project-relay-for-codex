@@ -1,4 +1,4 @@
 interface:
-  display_name: "Project Memory Workflow"
-  short_description: "Cross-chat handoff memory for projects"
-  default_prompt: "Use $project-memory-workflow to read or update this project's cross-chat handoff memory."
+  display_name: "Project Relay"
+  short_description: "Cross-chat project handoffs for AI coding"
+  default_prompt: "Use $project-relay to read or update this project's cross-chat handoff memory."

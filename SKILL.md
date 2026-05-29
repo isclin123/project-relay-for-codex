@@ -1,13 +1,13 @@
 ---
-name: project-memory-workflow
-description: Maintain lightweight cross-chat project memory for Codex workspaces. Use when starting work in an existing project, continuing work from another Codex conversation, finishing a task that should leave a handoff, initializing project memory, updating project summaries/decisions, or when the user says things like "read project memory", "update project memory", "write a handoff", "continue from last conversation", "跨对话", "项目记忆", or "交接总结".
+name: project-relay
+description: Maintain lightweight cross-chat project memory for Codex and Claude Code workspaces. Use when starting work in an existing project, continuing work from another AI coding conversation, finishing a task that should leave a handoff, initializing project memory, updating project summaries/decisions, or when the user says things like "read project memory", "update project memory", "write a handoff", "continue from last conversation", "跨对话", "项目记忆", "交接总结", or "项目接力".
 ---
 
-# Project Memory Workflow
+# Project Relay
 
 ## Overview
 
-Use this workflow to share concise project state across Codex conversations without rereading the entire repository every time. Store memory inside the project at `.codex/project-memory/`, then read that memory first and update it at the end of meaningful work.
+Use this workflow to share concise project state across Codex or Claude Code conversations without rereading the entire repository every time. Store memory inside the project at `.codex/project-memory/`, then read that memory first and update it at the end of meaningful work.
 
 ## Core Workflow
 
@@ -22,7 +22,7 @@ Use this workflow to share concise project state across Codex conversations with
 Resolve the skill directory, then call the script with Python:
 
 ```bash
-python3 /path/to/project-memory-workflow/scripts/project_memory.py context --project-root "$PWD"
+python3 /path/to/project-relay/scripts/project_memory.py context --project-root "$PWD"
 ```
 
 Useful commands:
@@ -34,7 +34,7 @@ Useful commands:
 Example update:
 
 ```bash
-python3 /path/to/project-memory-workflow/scripts/project_memory.py update \
+python3 /path/to/project-relay/scripts/project_memory.py update \
   --project-root "$PWD" \
   --title "Add OAuth callback handling" \
   --project-summary "Next.js app for internal account management." \
